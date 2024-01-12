@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+#header, #menu, .mainContent, #footer {
+    justify-content: center;
+    display: flex;;
+}
+
+.content{
+    width: 1200px;
+    display: flex;
+}
+
+#header{
+    background-color: #75c321;
+}
+#header > div > div{
+    padding: 10px;
+}
+#logo{
+    width: 20%;
+}
+
+#search{
+    width: 60%;
+}
+
+#search input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#search button{
+    width: 20%;
+    padding: 10px;
+    background-color: #75c321;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#search button:hover{
+    background-color: white;
+    color: #75c321;
+    cursor: pointer;
+}
+
+#search div > a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+#search div > a:hover{
+    text-decoration: underline;
+}
+
+#phone{
+    width: 10%;
+    text-align: center;
+}
+
+#phone > a{
+    text-decoration: none;
+}
+
+#cart{
+    width: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cart a{
+    background-color: #75c321;
+    padding: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#cart a:hover{
+    background-color: white;
+    color: #75c321;
+}
+
+#menu{
+    z-index: 10;
+    background-color: #6aaf21;
+    position: sticky;
+    top: 0;
+}
+
+#menu .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .content .main-menu{
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu .content .main-menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    color: rgb(218, 244, 47);
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    top: 0;
+    left: 0;
+}
+
+.sub-menu li{
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+
+.sub-menu a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 13px;
+}
+
+.sub-menu a > img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+li:hover .sub-menu{
+    display: block;
+    border: 1px solid black;
+}
+
+.menu-title{
+    padding-left: 0px;
+}
+
+.mainContent{
+    width: 100%;
+    height: auto;
+}
+
+.mainContent .content{
+    width: 1200px;
+    display: block;
+    text-align: center;
+}
+
+#banner{
+    z-index: 1;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
+#banner img{
+    width: 50%;
+    margin: 30px;
+}
+
+#grid-product{
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid: auto / auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#grid-product a{
+    color: black;
+    position: relative;
+}
+
+
+.giaGoc{
+    text-decoration: line-through;
+    color: gray;
+    float: left;
+    font-weight: bold;
+}
+
+.giamGia{
+    float: right;
+    font-weight: bold;
+}
+
+.phantramgiam{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    background-color: pink;
+    padding: 5px;
+}
+
+#middle-banner{
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    background-color:#75c321;
+    text-align: center;
+}
+
+#middle-banner a{
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#middle-banner a:hover{
+    background-color: white;
+    color: #75c321;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#middle-banner a::before{
+    content: "";
+    display: inline-block;
+    margin-right: 5px; 
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+#middle-banner a:hover::before{
+    content: "\260E";
+    font-size: 17px;
+    font-weight: 900;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#footer{
+    background-color: #75c321;
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+}
+
+#footer .content{
+   
+    display: flex;
+}
+
+#footer #part1{
+    width: 40%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+
+#footer #part2, #footer #part3{
+    width: 30%;
+    padding: 10px;
+}
+
+#listshop{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listshop li{
+    padding: 10px;
+    margin: 0;
+}
+
+#listshop li::first-letter{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#part2 ul, #part3 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#part2 li, #part3 li{
+    padding: 10px;
+    margin: 0;
+}
+
+#part2 a, #part3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#icon{
+    display: flex;
+}
+
+#go-top{
+    border-radius: 30px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#part1, #part2, #part3{
+    width: 20%;
+}
